@@ -22,16 +22,15 @@ The simulation compares **long-only portfolios** (asset weights constrained to [
 1. Retrieve daily adjusted closing prices using the `yfinance` API.
 2. Compute daily returns, and derive:
    - **Annualized expected return** = mean daily return × 252  
-   - **Annualized volatility** = std dev of daily returns × √252  
+   - **Annualized volatility** = standard deviation of daily returns × √252  
    - **Annualized covariance matrix**
 3. Simulate 700 random portfolio allocations for each of the two strategies:
-   - *Long-only*: weights ∈ [0, 1], sum to 1  
-   - *Long-and-short*: weights ∈ [−1, 1], sum to 1
+   - *Long-only*: weights in [0, 1], sum to 1  
+   - *Long-and-short*: weights in [−1, 1], sum to 1
 4. Compute expected return and risk for each portfolio:
-   - Return: \( \mu_p = w^T \mu \)  
-   - Risk: \( \sigma_p = \sqrt{w^T \Sigma w} \)
+   - Return: mu_p = wᵀ * mu  
+   - Risk: sigma_p = sqrt(wᵀ * Σ * w)
 5. Visualize portfolios using `matplotlib`.
-
 ---
 
 ## Project Structure
