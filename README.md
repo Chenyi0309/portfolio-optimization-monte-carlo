@@ -71,9 +71,9 @@ This will generate a scatter plot comparing long-only and long-and-short portfol
 
 ---
 
-## Sample Output
+## Simulation Results
 
-![Portfolio Simulation Plot](portfolio_plot.png)
+![Portfolio Simulation Result](portfolio_plot.png)
 
 ---
 
